@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/./index.html"
   },
   {
-    "revision": "bfb4e8e15ed0f4505e38",
+    "revision": "62eec0ac23c976a40d62",
     "url": "/assets/main.css"
   },
   {
@@ -256,7 +256,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/assets\\yandex-browser-manifest.json"
   },
   {
-    "revision": "bfb4e8e15ed0f4505e38",
+    "revision": "62eec0ac23c976a40d62",
     "url": "/bundle.js"
   },
   {
