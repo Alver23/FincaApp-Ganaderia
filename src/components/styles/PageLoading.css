@@ -1,0 +1,11 @@
+.PageLoading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/*   min-height: 100vh; */
+  height: 110vh;
+  width: 100%;
+  margin-top: -3.5rem;
+  background-image: radial-gradient(circle, #3bc683, #57c989, #6ccc90, #7fcf98, #8fd2a0, #8ed4ac, #8ed6b6, #91d7c0, #89d7cf, #88d5db, #8ed3e5, #99d0eb);
+}
