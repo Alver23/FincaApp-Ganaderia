@@ -7,14 +7,6 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 const dotenv = require("dotenv-webpack");
 
-const isDev = process.env.ENV === "development";
-const entry = ["./src/index.js"];
-
-if (isDev)
-  entry.push(
-    "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true"
-  );
-
 const path = require("path");
 
 // Creamos un nuevo modulo que vamos a exportar con esta configuracion
@@ -26,21 +18,6 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "/",
   },
-  // Iniciando por la entrada del proyecto
-  // Haciendo referencia al archivo principal
-  /* target: "node", */
-  /* node: { fs: "empty" },
-  entry: {
-    index: path.resolve(__dirname, "src/index.js"),
-  }, */
-
-  // Filename nos pone un nombre al archivo compilado
-  /* output: {
-    filename: "app.bundle.js",
- */
-  //Simpre va a la raiz
-  /* publicPath: "/",
-  }, */
 
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {

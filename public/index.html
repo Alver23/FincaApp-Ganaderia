@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <link rel="icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
   <title>FincaApp</title>
 </head>
 
@@ -12,23 +14,20 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <div id="modal"></div>
-
   <script>
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('service-worker.js').then(function (registration) {
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-          console.log('ServiceWorker registration failed: ', err);
-        }).catch(function (err) {
-          console.log(err)
-        });
-      });
-    } else {
-      console.log('service worker is not supported');
+        navigator.serviceWorker.register('./serviceWorker.js')
+          .then(registration => {
+            console.log("SW registrado")
+          })
+          .catch(registrationError => {
+            console.log('SW error', registrationError)
+          })
+      })
     }
   </script>
-
 </body>
 
 </html>

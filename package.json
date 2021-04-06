@@ -1,6 +1,6 @@
 {
   "homepage": "",
-  "name": "test",
+  "name": "finca-app-ganadera",
   "version": "1.0.0",
   "description": "administra tu finca de manera inteligente",
   "main": "index.js",
